@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuStrip>
+	<Menu TextValue="人事管理">
+		<Item ToolType="MenuItem" TextValue="员工管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="员工添加" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="部门管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="离职管理" FrmName=""></Item>
+	</Menu>
+	<Menu TextValue="工资管理">
+		<Item ToolType="MenuItem" TextValue="工资管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="工资发放" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="调薪设置" FrmName=""></Item>
+	</Menu>
+	<Menu TextValue="财务管理">
+		<Item ToolType="MenuItem" TextValue="支出管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="收入管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="收入合同管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="账户查询" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="收入明细" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="支出明细" FrmName=""></Item>
+	</Menu>
+	<Menu TextValue="系统设置">
+		<Item ToolType="MenuItem" TextValue="用户管理" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="新增用户" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="系统初始化" FrmName=""></Item>
+		<Item ToolType="MenuItem" TextValue="密码修改" FrmName=""></Item>
+	</Menu>
+</MenuStrip>
