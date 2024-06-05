@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuStrip>
+	<Menu TextValue="人事管理">
+		<Item ToolType="MenuItem" TextValue="员工管理" FrmName="Managers.FrmlodifyPass" imageSrc="image\员工管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="员工添加" FrmName="FrmLogin" imageSrc="image\员工添加.png"></Item>
+		<Item ToolType="MenuItem" TextValue="部门管理" FrmName="Seperator" imageSrc="image\部门管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="离职管理" FrmName="Exit" imageSrc="image\离职管理.png"></Item>
+	</Menu>
+	<Menu TextValue="工资管理">
+		<Item ToolType="MenuItem" TextValue="工资管理" FrmName="Calculator" imageSrc="image\工资管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="工资发放" FrmName="Drawing" imageSrc="image\工资发放.png"></Item>
+		<Item ToolType="MenuItem" TextValue="调薪设置" FrmName="Drawing" imageSrc="image\调薪设置.png"></Item>
+	</Menu>
+	<Menu TextValue="财务管理">
+		<Item ToolType="MenuItem" TextValue="支出管理" FrmName="Managers.FrmBackUpData" imageSrc="image\支出管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="收入管理" FrmName="Managers.FrmBackUpData" imageSrc="image\收入管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="收入合同管理" FrmName="Managers.FrmBackUpData" imageSrc="image\收入合同管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="账户查询" FrmName="Managers.FrmBackUpData" imageSrc="image\账户查询.png"></Item>
+		<Item ToolType="MenuItem" TextValue="收入明细" FrmName="Managers.FrmBackUpData" imageSrc="image\收入明细.png"></Item>
+		<Item ToolType="MenuItem" TextValue="支出明细" FrmName="Managers.FrmBackUpData" imageSrc="image\支出明细.png"></Item>
+	</Menu>
+	<Menu TextValue="系统设置">
+		<Item ToolType="MenuItem" TextValue="用户管理" FrmName="Users.FrmUserList" imageSrc="image\用户管理.png"></Item>
+		<Item ToolType="MenuItem" TextValue="新增用户" FrmName="Users.FrmUserAdd" imageSrc="image\新增用户.png"></Item>
+		<Item ToolType="MenuItem" TextValue="系统初始化" FrmName="SystemInitial" imageSrc="image\系统初始化.png"></Item>
+		<Item ToolType="MenuItem" TextValue="密码修改" FrmName="Users.FrmUserPasswordUpdate" imageSrc="image\密码修改.png"></Item>
+	</Menu>
+</MenuStrip>
