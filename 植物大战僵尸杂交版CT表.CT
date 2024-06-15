@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"阳光"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>0x006A9EC0</Address>
+      <Offsets>
+        <Offset>+5560</Offset>
+        <Offset>+768</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"无CD"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+add dword ptr [edi+24],999
+mov eax,[edi+24]
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+8728C:
+jmp newmem
+nop 2
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+8728C:
+db 83 47 24 01 8B 47 24
+//add dword ptr [edi+24],01
+//mov eax,[edi+24]
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"修改豌豆子弹"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov eax,#11 //#后为子弹类型
+originalcode:
+jmp PlantsVsZombies.exe+442D40
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+672A5:
+jmp newmem
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+672A5:
+db E9 96 BA 3D 00
+//jmp PlantsVsZombies.exe+442D40
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>替换了 add dword ptr [edi+24],01</Description>
+      <AddressString>PlantsVsZombies.exe+8728C</AddressString>
+      <Before>
+        <Byte>7F</Byte>
+        <Byte>49</Byte>
+        <Byte>00</Byte>
+        <Byte>74</Byte>
+        <Byte>20</Byte>
+      </Before>
+      <Actual>
+        <Byte>83</Byte>
+        <Byte>47</Byte>
+        <Byte>24</Byte>
+        <Byte>01</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>47</Byte>
+        <Byte>24</Byte>
+        <Byte>3B</Byte>
+        <Byte>47</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>

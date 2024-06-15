@@ -108,26 +108,15 @@ namespace Pssm
         {
             if (e.Element.Style != ElementStyle.Group)
             {
-                string ClassName ;
-                switch (e.Element.Tag)
+                if (e.Element.Tag.Equals("SystemInitial"))
                 {
-                    case "SystemInitial":
-                        SystemInitialize();
-                        break;
-                    case "Users.FrmUserList":
-                        ClassName = e.Element.Tag as string;
-                        DataAccessFactory.OpenForm(ClassName);
-                        break;
-                    case "Users.FrmUserPasswordUpdate":
-                         ClassName = e.Element.Tag as string;
-                        DataAccessFactory.OpenForm(ClassName);
-                        break;
-                    case "Users.FrmUserAdd":
-                         ClassName = e.Element.Tag as string;
-                        DataAccessFactory.OpenForm(ClassName);
-                        break;
-
-
+                    SystemInitialize();
+                    return;
+                }
+                else
+                {
+                  string  ClassName = e.Element.Tag as string;
+                    DataAccessFactory.OpenForm(ClassName);
                 }
             }
         }

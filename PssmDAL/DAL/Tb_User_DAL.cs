@@ -80,7 +80,7 @@ namespace PssmDAL.DAL
         /// <returns></returns>
         public DataTable GetUsers()
         {
-            DataTable dt = new DataTable();
+            
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("SELECT UserID AS 序号,Username AS 账号,Password AS 密码,Email AS 邮箱,b.ReName AS 角色,");
             sb.AppendLine("CASE IsEnabled WHEN 1 then '否' ELSE '是' END AS 是否禁用");
@@ -100,6 +100,7 @@ namespace PssmDAL.DAL
         public int AddUser(Tb_User user)
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("declare  @a int\r\nset @a=(SELECT Max(UserID) from Tb_User)\r\ndbcc checkident('Tb_User',reseed,@a)    ");
             sb.AppendLine(
                 "INSERT INTO dbo.Tb_User(Username, Password, RealID,IsEnabled)\r\nVALUES(@Username,@Password,@RealID,@IsEnabled)");
             SqlParameter[] sqlParameters =
@@ -123,7 +124,7 @@ namespace PssmDAL.DAL
         public int DeleteUser(int UserID)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("DELETE FROM dbo.Tb_User WHERE UserID=@UserID");
+            sb.AppendLine(" SET IDENTITY_INSERT Tb_User  ON DELETE FROM dbo.Tb_User WHERE UserID=@UserID SET IDENTITY_INSERT Tb_User  Off");
             SqlParameter sqlParameters = new SqlParameter("@UserID", UserID);
             return SqlHelper.ExecteNonQueryText(sb.ToString(), sqlParameters);
         }
@@ -147,6 +148,7 @@ namespace PssmDAL.DAL
             return SqlHelper.ExecteNonQueryText(sb.ToString(), sqlParameter) > 0;
         }
         #endregion
+
         #region 更新密码
         /// <summary>
         /// 更新密码

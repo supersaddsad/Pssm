@@ -18,7 +18,7 @@ namespace Common.Utility
         /// 数据库连接字符串
         /// </summary>
         // public static readonly string connectionString = System.Configuration.ConfigurationSettings.AppSettings["con"].ToString().Trim();
-        public static readonly string connectionString = "server=192.168.2.244; database=Pssm; uid=sa; pwd=123456";
+        public static readonly string connectionString = "server=127.0.0.1; database=Pssm; uid=sa; pwd=123456";
 
         // Hashtable to store cached parameters
         private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());

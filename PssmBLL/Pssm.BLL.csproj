@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\SystemInitialize_BLL\SystemInitialize_BLL.cs" />
+    <Compile Include="BLL\Tb_Deptment_BLL.cs" />
+    <Compile Include="BLL\Tb_EMPloyee_BLL.cs" />
     <Compile Include="BLL\Tb_Operate_BLL.cs" />
     <Compile Include="BLL\Tb_Real_BLL.cs" />
     <Compile Include="BLL\Tb_User_BLL.cs" />

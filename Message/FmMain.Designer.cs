@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmMain));
             this.toolbarFormManager1 = new DevExpress.XtraBars.ToolbarForm.ToolbarFormManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -185,9 +186,10 @@
             this.Controls.Add(this.barDockControlTop);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("FmMain.IconOptions.SvgImage")));
             this.Name = "FmMain";
             this.NavigationControl = this.Sbar;
-            this.Text = "FmMain";
+            this.Text = "管理";
             ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).EndInit();
             this.fluentDesignFormContainer1.ResumeLayout(false);
             this.fluentDesignFormContainer1.PerformLayout();

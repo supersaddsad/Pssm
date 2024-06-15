@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraBars;
+﻿ using DevExpress.XtraBars;
 using Pssm.DALFactory;
 using Pssm.Properties;
 using Pssm.Unitiy;

@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Tb_Deptment_DAL.cs" />
+    <Compile Include="DAL\Tb_EMPloyee_DAL.cs" />
     <Compile Include="DAL\Tb_Operate_DAL.cs" />
     <Compile Include="DAL\Tb_Real_DAL.cs" />
     <Compile Include="DAL\Tb_User_DAL.cs" />

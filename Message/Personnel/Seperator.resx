@@ -117,96 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddOK" xml:space="preserve">
-    <value>添加成功</value>
-  </data>
-  <data name="AdiminNotDisable" xml:space="preserve">
-    <value>管理员不能被禁用</value>
-  </data>
-  <data name="AdminNotDelte" xml:space="preserve">
-    <value>管理员不能被删除</value>
-  </data>
-  <data name="DeleteSucce" xml:space="preserve">
-    <value>删除成功</value>
-  </data>
-  <data name="DisableSucce" xml:space="preserve">
-    <value>禁用成功</value>
-  </data>
-  <data name="EnableSucce" xml:space="preserve">
-    <value>启用成功</value>
-  </data>
-  <data name="FromIsTwo" xml:space="preserve">
-    <value>程序已经运行</value>
-    <comment>程序已经运行</comment>
-  </data>
-  <data name="ISDisable" xml:space="preserve">
-    <value>已经是禁用转态</value>
-  </data>
-  <data name="IsEnable" xml:space="preserve">
-    <value>已经是启用转态</value>
-  </data>
-  <data name="ISParentID" xml:space="preserve">
-    <value>单前父节点有子节点未删除，无法删除</value>
-  </data>
-  <data name="LeftMenu" xml:space="preserve">
-    <value>LeftMenu.xml</value>
-  </data>
-  <data name="OKDelete" xml:space="preserve">
-    <value>是否确认删除</value>
-  </data>
-  <data name="OpertypeLogin" xml:space="preserve">
-    <value>登录系统</value>
-  </data>
-  <data name="PassIsNull" xml:space="preserve">
-    <value>密码不能为空</value>
-  </data>
-  <data name="SaveFail" xml:space="preserve">
-    <value>数据保存失败</value>
-  </data>
-  <data name="SaveSucce" xml:space="preserve">
-    <value>保存成功</value>
-  </data>
-  <data name="SeachUser" xml:space="preserve">
-    <value>请选择需要修改的账号</value>
-  </data>
-  <data name="SystemAlert" xml:space="preserve">
-    <value>系统提示</value>
-  </data>
-  <data name="SystemInitialize" xml:space="preserve">
-    <value>您确认要初始化系统吗？系统初始化要清空所有数据</value>
-  </data>
-  <data name="TwoPass" xml:space="preserve">
-    <value>二次输入密码不匹配</value>
-  </data>
-  <data name="UsePawErroy" xml:space="preserve">
-    <value>账号或密码错误</value>
-  </data>
-  <data name="UserIsExitis" xml:space="preserve">
-    <value>账号不存在</value>
-  </data>
-  <data name="UserIsNull" xml:space="preserve">
-    <value>账号不能为空</value>
-  </data>
-  <data name="UserSuccer" xml:space="preserve">
-    <value>登陆成功</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\密码.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="猪" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\猪.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="登录" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\登录.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="登陆背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\登陆背景.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="账号" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\账号.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="退出" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\退出.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="BarMan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 17</value>
+  </metadata>
+  <metadata name="PopMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

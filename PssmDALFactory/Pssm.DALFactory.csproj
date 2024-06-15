@@ -60,11 +60,5 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PssmBLL\Pssm.BLL.csproj">
-      <Project>{0B6923AB-6F5D-4BB0-8705-27A17E5C1C20}</Project>
-      <Name>Pssm.BLL</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

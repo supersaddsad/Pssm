@@ -142,6 +142,15 @@ namespace Pssm.Properties {
         }
         
         /// <summary>
+        ///   查找类似 单前父节点有子节点未删除，无法删除 的本地化字符串。
+        /// </summary>
+        internal static string ISParentID {
+            get {
+                return ResourceManager.GetString("ISParentID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 LeftMenu.xml 的本地化字符串。
         /// </summary>
         internal static string LeftMenu {
