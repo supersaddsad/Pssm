@@ -1,15 +1,21 @@
-﻿using Pssm.Properties;
-using Pssm.Unitiy;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net;
+using System.Resources;
+using System.Text;
+using System.Windows.Forms;
+using Message.Unitiy;
 using PssmBLL.BLL;
 using PssmModel.StaticModel;
 using PssmPublicLibary.Enum;
-using System;
-using System.Net;
-using System.Windows.Forms;
 using Utilities;
 using YourNamespace;
+using System.Security.Principal;
 
-namespace Pssm
 {
     public partial class FmLogin : DevExpress.XtraEditors.XtraForm
     {
@@ -54,7 +60,7 @@ namespace Pssm
             {
                 Ed_pwd.Properties.PasswordChar = '\0';
             }
-        }
+        } 
         #endregion
 
         #region 退出
@@ -83,15 +89,12 @@ namespace Pssm
         {
             Tb_User model = new Tb_User();
             Tb_User_BLL userBll = new Tb_User_BLL();
-            Tb_User user = new Tb_User()
             {
                 Username = Ed_user.Text.Trim(),
                 Password = Ed_pwd.Text.Trim()
             };
             Action action = new Action(() =>
             {
-                if (!InputCheek(user)) return;
-                if (!userBll.IsExists(user, out model))
                 {
                     CommMessageBox.MesBoxError(Resources.UserIsExitis);
                 }
@@ -164,7 +167,7 @@ namespace Pssm
                 IP = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString()
             };
             Tb_Operate_BLL.Add(operate);
-        }
+        } 
         #endregion
 
     }

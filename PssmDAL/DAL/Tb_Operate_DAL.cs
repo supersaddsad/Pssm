@@ -1,6 +1,9 @@
-﻿using Common.Utility;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
+using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
+using System.Threading.Tasks;
+using Common.Utility;
 using YourNamespace;
 
 namespace PssmDAL.DAL
@@ -9,7 +12,6 @@ namespace PssmDAL.DAL
     {
         public static int LogAdd(Tb_Operate tbOperate)
         {
-            StringBuilder str = new StringBuilder();
             str.AppendLine(
                 "INSERT INTO dbo.Tb_Operate(OperateType, OperateTime, OpertePerson, Statr, ComputName, OperateSystem,CodeType,IP)");
             str.AppendLine("VALUES(@OperateType, @OperateTime, @OpertePerson, @Statr, @ComputName, @OperateSystem,@CodeType,@IP)");
